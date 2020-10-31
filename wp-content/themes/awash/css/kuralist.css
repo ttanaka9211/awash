@@ -1,0 +1,505 @@
+@charset "utf-8";
+/*==========▼共通==========*/
+a,
+a:visited {
+    text-decoration: none;
+    color          : #000000;
+}
+a:hover{
+    opacity: 0.7;
+}
+p{
+    font-size: 16px;
+}
+.container {
+    margin : 0 auto;
+    padding: 0;
+}
+.kl_main {
+    margin : 0 auto;
+    padding: 0 10px;
+}
+/*==========▲共通==========*/
+
+/*==========▼ページタイトル==========*/
+.kl_top{
+    position: relative;
+    width   : 100%;
+    height  : 18.6666667%;
+}
+.kl_top>img{
+    width     : 100%;
+    height    : 100%;
+    max-height: 250px;
+}
+h2{
+    position         : absolute;
+    bottom           : 50%;
+    right            : 50%;
+    transform        : translate(50%, 50%);
+    -ms-transform    : translate(50%, 50%);
+    -webkit-transform: translate(50%, 50%);
+    color            : #ffffff;
+    font-size        : 6vw;
+}
+/*==========▲ページタイトル==========*/
+
+/*==========▼詳細検索==========*/
+.kl_search {
+    margin-bottom: 30px;
+}
+.kl_search_icon {
+    position: relative;
+    height  : 70px;
+}
+.fa-search {
+    position         : absolute;
+    bottom           : 50%;
+    right            : 0;
+    transform        : translate(0, 50%);
+    -ms-transform    : translate(0, 50%);
+    -webkit-transform: translate(0, 50%);
+}
+.hide{
+    display: none;
+}
+.kl_line {
+    margin-bottom   : 15px;
+    width           : 100%;
+    height          : 2px;
+    border          : none;
+    background-color: #19448e;
+}
+.kl_form1 {
+    display      : flex;
+    margin-bottom: 40px;
+}
+.kl_search_text {
+    flex: 1;
+}
+.kl_textbox {
+    width : 100%;
+    border: 1px solid #000000;
+}
+.kl_sort_dropdown {
+    margin-left: 5px;
+    width      : 100px;
+    border     : 1px solid #19448e;
+}
+.kl_sort_name{
+        margin-left     : 10px;
+}
+.kl_dropdown {
+    width: 100px;
+}
+.kl_form2 {
+    margin: 0 10px;
+}
+.kl_check {
+    display       : flex;
+    flex-direction: column;
+    flex-wrap     : wrap;
+}
+.kl_check p {
+    margin-bottom: 20px;
+}
+.kl_category_area,
+.kl_tag_area {
+    display  : flex;
+    flex-wrap: wrap;
+}
+input[type=checkbox] {
+    width         : 20px;
+    height        : 20px;
+    vertical-align: middle;
+}
+.kl_tag {
+    display      : inline-block;
+    margin-right : 15px;
+    width        : 70px;
+    height       : 20px;
+    border       : 1px solid #19448e;
+    border-radius: 10px;
+    font-size    : 10px;
+    text-align   : center;
+}
+.kl_search_button {
+    text-align   : center;
+    margin-bottom: 30px;
+}
+.kl_button {
+    width           : 100px;
+    height          : 40px;
+    border-radius   : 30px;
+    border          : 1px solid transparent;
+    background-color:#dbe1ed;
+}
+.kl_button:first-of-type{
+    margin-right: 50px;
+}
+.kl_button:focus {
+	outline:0;
+}
+.kl_button>span {
+    color: #19448e;
+}
+/*==========▲詳細検索==========*/
+
+/*==========▼マップ検索==========*/
+/* マップエリア下に空間 */
+.kl_map_area{
+    margin-bottom:50px;
+}
+/* マップイラスト部分 */
+.kl_map_map{
+    margin         : 0 auto;
+    width          : 100vw;
+    max-width      : 490px;
+    height         : 40vh;
+    position       : relative;
+    background     : url(../images/contents/kura/kl_map_img04.png) center center no-repeat;
+    background-size: contain;
+}
+.kl_map_map>ul{
+    list-style: none;
+}
+.kl_map_map a{
+    display        : block;
+    text-decoration: none;
+}
+.kl_mapall_text{
+    display         : block;
+    width           : 100px;
+    color           : white;
+    font-size       : 20px;
+    line-height     : 50px;
+    text-align      : center;
+    background-color: #19448E;
+    position        : absolute;
+    left            : 10%;
+    bottom          : 15%;
+}
+.kl_map_text{
+    display         : block;
+    width           : 50px;
+    color           : white;
+    font-size       : 20px;
+    line-height     : 50px;
+    text-align      : center;
+    background-color: #19448E;
+}
+/* 西 */
+.kl_west_text{
+    position: absolute;
+    top     : 10%;
+    left    : 15%;
+}
+.kl_left_map{
+    grid-row   : 1/2;
+    grid-column: 2/3;
+}
+/* 東 */
+.kl_east_text{
+    position: absolute;
+    top     : 10%;
+    right   : 15%;
+}
+.kl_right_map{
+    grid-row   : 1/2;
+    grid-column: 3/4;
+}
+/* 南 */
+.kl_south_text{
+    position: absolute;
+    bottom  : 10%;
+    right   : 30%;
+}
+.kl_bottom_map{
+    grid-row   : 2/3;
+    grid-column: 2/4;
+    margin     : 0 auto;
+}
+/*==========▲マップ検索==========*/
+
+/*==========▼一覧==========*/
+.kl_maker {
+    position     : relative;
+    margin-bottom: 40px;
+}
+.kl_maker_img img {
+    width : 100%;
+    height: auto;
+}
+.kl_maker:last-child {
+    margin-bottom: 0;
+}
+.kl_namelabel {
+    opacity         : 0.5;
+    position        : absolute;
+    bottom          : 8%;
+    left            : 0;
+    z-index         : 1;
+    width           : 100%;
+    height          : 23%;
+    background-color: #19448e;
+}
+.kl_character {
+    position    : absolute;
+    bottom      : 10%;
+    left        : 0;
+    z-index     : 2;
+    padding-left: 10px;
+}
+.kl_kana {
+    margin-bottom: -10px;
+    font-size    : 2.1333vw;
+    color        : #ffffff;
+}
+.kl_name {
+    font-size: 8vw;
+    color    : #ffffff;
+}
+.kl_pagination {
+    margin-bottom: 70px;
+}
+/*==========▲一覧==========*/
+
+/* 560px以上 */
+@media screen and (min-width:560px) {
+    /*==========▼共通==========*/
+    .kl_main {
+        max-width: 960px;
+    }
+    /*==========▲共通==========*/
+
+    /*==========▼ページタイトル==========*/
+    .kl_top {
+        height: 13.0208333%;
+    }
+    h2{
+        font-size: 5.5vw;
+    }
+    /*==========▲ページタイトル==========*/
+
+    /*==========▼詳細検索==========*/
+    #search_inner {
+        max-width: 900px;
+        margin   : 0 auto;
+    }
+
+    .kl_textbox {
+        border: 1px solid #19448e;
+    }
+    .kl_sort_name{
+        margin-left: 30px;
+    }
+    .kl_sort_dropdown {
+        width      : 190px;
+    }
+    .kl_dropdown {
+        width: 190px;
+    }
+    .kl_form2 {
+        margin: 0 auto;
+        width : 86.6666%;
+    }
+    .kl_search_button {
+        margin-bottom: 110px;
+    }
+    .kl_sort_text {
+        margin-left: 30px;
+    }
+    .hide560 {
+        display: none;
+    }
+    /*==========▲詳細検索==========*/
+
+    /*==========▼マップ検索==========*/
+    .kl_map {
+        margin-bottom: 16.6666%;
+    }
+    /*==========▲マップ検索==========*/
+
+    /*==========▼一覧==========*/
+    .kl_result {
+        margin-bottom: 350px;
+    }
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear  : both;
+    }
+    .slideConts:nth-child(odd) {
+        transform        : translate(-3000px, 0);
+        -ms-transform    : translate(-3000px, 0);
+        -webkit-transform: translate(-3000px, 0);
+        transition       : 1s;
+    }
+    .slideConts:nth-child(even) {
+        transform        : translate(3000px, 0);
+        -ms-transform    : translate(3000px, 0);
+        -webkit-transform: translate(3000px, 0);
+        transition       : 1s;
+    }
+    .slideConts.show:nth-child(odd) {
+        transform        : translate(0, 0);
+        -ms-transform    : translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transition       : 1s;
+    }
+    .slideConts.show:nth-child(even) {
+        transform        : translate(0, 0);
+        -ms-transform    : translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transition       : 1s;
+    }
+    .kl_maker {
+        width        : 43.7500%;
+        margin-bottom: 130px;
+    }
+    .kl_maker:nth-child(odd) {
+        float: left;
+    }
+    .kl_maker:nth-child(even) {
+        float: right;
+    }
+    .kl_maker:nth-child(2) {
+        margin-top: 150px;
+    }
+    .kl_namelabel {
+        bottom    : 1.6%;
+        width     : 115%;
+        background: -moz-linear-gradient(left, #19448e 70%, #ffffff);
+        background: -webkit-linear-gradient(left, #19448e 70%, #ffffff);
+        background: linear-gradient(to right, #19448e 70%, #ffffff);
+    }
+    .kl_character {
+        bottom: 8%;
+    }
+    .kl_kana {
+        margin-bottom: -5px;
+        font-size    : 0.83vw;
+    }
+    .kl_name {
+        margin-bottom: -5px;
+        font-size    : 2.5vw;
+    }
+    .kl_maker:nth-child(even) .kl_namelabel {
+        left            : -15%;
+        background-color: #19448e;
+        background      : -moz-linear-gradient(right, #19448e 70%, #ffffff);
+        background      : -webkit-linear-gradient(right, #19448e 70%, #ffffff);
+        background      : linear-gradient(to left, #19448e 70%, #ffffff);
+    }
+    .kl_maker:nth-child(even) .kl_character {
+        display       : flex;
+        flex-direction: column;
+        align-items   : flex-end;
+        right         : 0;
+        padding-right : 20px;
+    }
+    .kl_pagination {
+        margin-bottom: 350px;
+    }
+    .kl_pager .kl_pagenation li {
+        display: none;
+    }
+    .kl_pager .kl_pagenation {
+        text-align: center;
+    }
+    .kl_pager .kl_pagenation li {
+        margin       : 0 2px;
+        padding      : 0;
+        display      : inline-block;
+        width        : 50px;
+        height       : 50px;
+        text-align   : center;
+        position     : relative;
+        border-radius: 50px;
+    }
+    .kl_pager .kl_pagenation li.pre, .kl_pager .kl_pagenation li.next {
+        background-color: #19448E;
+        color           : #fff;
+    }
+    .kl_pager .kl_pagenation li a {
+        vertical-align    : middle;
+        position          : absolute;
+        top               : 0;
+        left              : 0;
+        width             : 100%;
+        height            : 100%;
+        text-align        : center;
+        display           : table;
+        text-decoration   : none;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition   : all 0.3s ease;
+        -o-transition     : all 0.3s ease;
+        transition        : all 0.3s ease;
+    }
+    .kl_pager .kl_pagenation li.pre a, .kl_pager .kl_pagenation li.next a {
+        color: #fff;
+    }
+    .kl_pager .kl_pagenation li a span {
+        display       : table-cell;
+        vertical-align: middle;
+    }
+    .kl_pager .kl_pagenation li a:hover, .kl_pager .kl_pagenation li a.active {
+        color                   : #000;
+        background              : #fff;
+        border                  : 1px solid #19448E;
+        animation               : animScale 0.4s ease-out;
+        transform-origin        : 50% 50%;
+        -webkit-animation       : animScale 0.4s ease-out;
+        -webkit-transform-origin: 50% 50%;
+        -moz-animation          : animScale 0.4s ease-out;
+        -moz-transform-origin   : 50% 50%;
+    }
+    .kl_pager .kl_pagenation li.pre, .kl_pager .kl_pagenation li.next {
+        display   : inline-block;
+        width     : 50px;
+        height    : 50px;
+        text-align: center;
+    }
+    .kl_pager .kl_pagenation li.pre a, .kl_pager .kl_pagenation li.next a {
+        width     : 100%;
+        text-align: center;
+    }
+    .kl_pager .kl_pagenation li.pre span::after {
+        content: "";
+    }
+    .kl_pager .kl_pagenation li.next span::before {
+        content: "";
+    }
+    /*==========▲一覧==========*/
+}
+@media screen and (min-width:1000px) {
+    .kl_character {
+        bottom: 6%;
+    }
+}
+@media screen and (min-width:1250px) {
+    .kl_character {
+        bottom: 5%;
+    }
+    .kl_kana {
+        margin-bottom: -5px;
+        font-size    : 0.83vw;
+    }
+    .kl_name {
+        margin-bottom: -5px;
+        font-size    : 1.875vw;
+    }
+}
+@media screen and (min-width:1600px) {
+    .kl_character {
+        bottom: 4%;
+    }
+    .kl_kana {
+        margin-bottom: -5px;
+        font-size    : 0.83vw;
+    }
+    .kl_name {
+        margin-bottom: -5px;
+        font-size    : 1.77vw;
+    }
+}

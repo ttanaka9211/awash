@@ -1,0 +1,431 @@
+@charset "utf-8";
+
+/* アコーディオンメニューJS用 */
+.hide {
+    display: none;
+}
+
+/* スライドイン用CSS */
+#slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.slidetime {
+    transition: 1s;
+}
+
+.slideConts {
+    opacity: 0;
+    transform: translate(0, 100px);
+    -ms-transform        : translate(0, 100px);
+    -webkit-transform    : translate(0, 100px);
+    transition: 1s;
+}
+
+.slideConts.show {
+    opacity: 1;
+    transform: translate(0, 0);
+    -ms-transform        : translate(0, 0);
+    -webkit-transform    : translate(0,);
+    transition: 1s;
+}
+
+/* クリアフィックス */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear  : both;
+}
+
+/* リンク */
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #000000;
+}
+
+.jl_product_title a,
+.jl_product_title a:link,
+.jl_product_title a:hover,
+.jl_product_title:active {
+    margin-bottom: 10px;
+    color: #19448e;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*==========▼ページタイトル==========*/
+.jl_h2{
+    position: relative;
+    width   : 100%;
+    height  : 13.0208333%;
+    /* background-color: red; */
+}
+
+.jl_h2>img{
+    width     : 100%;
+    height    : 100%;
+}
+
+h2{
+    position          : absolute;
+    top               : 50%;
+    left              : 50%;
+    transform         : translate(-50%, -50%);
+    -ms-transform     : translate(-50%, -50%);
+    -webkit-transform : translate(-50%, -50%);
+    color             : #ffffff;
+    font-size         : 5.5vw;
+}
+/*==========▲ページタイトル==========*/
+
+.jl_main {
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left : 10px;
+    max-width    : 960px;
+    /* background-color: pink; */
+}
+/*==========▼詳細検索==========*/
+/* 検索エリア */
+.jl_search {
+    margin-bottom: 30px;
+    /* background-color: powderblue; */
+}
+
+/* 虫眼鏡 */
+.jl_search_icon {
+    position: relative;
+    height  : 70px;
+    /* background-color: burlywood; */
+}
+.fa-search {
+    position         : absolute;
+    top              : 50%;
+    right            : 0;
+    transform        : translate(0, -50%);
+    -ms-transform    : translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    /* background-color: coral; */
+}
+
+/* 検索フォーム */
+#search_inner {
+    max-width: 900px;
+}
+
+.jl_line {
+    margin-bottom   : 15px;
+    width           : 100%;
+    height          : 2px;
+    border          : none;
+    background-color: #19448e;
+    color           : #19448e;
+}
+
+/* フリーワードと並べ替え */
+.jl_form1 {
+    display      : flex;
+    margin-bottom: 40px;
+}
+
+.jl_search_text {
+    flex: 1;
+}
+
+.jl_sort_dropdown {
+    margin-left     : 5px;
+    width           : 100px;
+    border          : 1px solid #19448e;
+    /* background-color: #dbe1ed; */
+}
+
+.jl_textbox {
+    width : 100%;
+    border: 1px solid #000000;
+}
+.jl_sort_name{
+        margin-left     : 10px;
+}
+.jl_dropdown {
+    width: 100px;
+}
+
+/* カテゴリとタグのチェックボックス */
+.jl_form2 {
+    margin-right: 10px;
+    margin-left : 10px;
+}
+
+.jl_check {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.jl_check p {
+    margin-bottom: 20px;
+}
+/* ↑カテゴリのタグと普通のタグの両方のmargin-bottom */
+
+.jl_category_area,
+.jl_tag_area {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: royalblue; */
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.jl_tag {
+    display: inline-block;
+    margin-right: 15px;
+    width: 70px;
+    height: 20px;
+    border: 1px solid #19448e;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* 検索ボタン */
+.jl_search_button {
+    text-align   : center;
+    margin-bottom: 30px;
+    /* background-color: salmon; */
+}
+
+.jl_button:first-of-type {
+    margin-right: 50px;
+}
+
+button {
+    width           : 100px;
+    height          : 40px;
+    border-radius   : 30px;
+    border          : 1px solid transparent;
+    background-color:#dbe1ed;
+}
+
+button:focus {
+    outline:0;
+}
+
+.jl_button span {
+    color: #19448e;
+}
+/*==========▲詳細検索==========*/
+
+/*==========▼カテゴリーメニュー==========*/
+.jl_menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    /* background-color: aqua; */
+}
+
+.jl_category_link {
+    width: 20.2054%;
+    text-align: center;
+    /* background-color: blueviolet; */
+}
+
+.jl_menu_img {
+    width: 100%;
+    height: auto;
+}
+
+/*==========▲カテゴリーメニュー==========*/
+
+/*==========▼一覧==========*/
+/* 検索結果表示エリア */
+/* .jl_result{
+    margin-bottom: 70px;
+    paginationの下へ
+    background-color: coral;
+} */
+
+.jl_product {
+    display         : flex;
+    justify-content : space-between;
+    margin-bottom   : 40px;
+    padding         : 10px;
+    border-radius   : 12px;
+    background-color: #dbe1ed;
+}
+
+.jl_product:last-child{
+    margin-bottom: 0;
+}
+
+.jl_product:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.jl_product_img {
+    align-items: center;
+    width      : 49.0740%;
+    /* background-color: cornflowerblue; */
+}
+
+.jl_product_img a img {
+    width : 100%;
+    height: auto;
+}
+
+.jl_product_description {
+    width: 49.0740%;
+    /* background-color: crimson; */
+}
+
+.jl_product_description>div {
+    margin-bottom: 10px;
+}
+
+.jl_product_icon_box {
+    display: flex;
+}
+
+.jl_product_icon img {
+    width : 50px;
+    height: 50px;
+}
+
+.jl_pagination {
+    margin: 50px 0 70px;
+}
+/*==========▲一覧==========*/
+
+/* 560px以上 */
+@media screen and (min-width:560px) {
+    /* ページタイトル */
+    .tl_h2{
+        height: 18.6667%;
+    }
+
+    .jl_h2>img{
+        max-height: 250px;
+    }
+
+    /* 検索エリア */
+    /* hr消去 */
+    .hide560 {
+        display: none;
+    }
+
+    /* フリーワード検索と並べ替え */
+    .jl_search_text {
+        flex: 1;
+    }
+
+    .jl_textbox {
+        width : 100%;
+        border: 1px solid #19448e;
+    }
+    .jl_sort_name{
+            margin-left     : 30px;
+    }
+
+    .jl_sort_dropdown {
+        width           : 190px;
+        border          : 1px solid #19448e;
+        /* background-color: #ffffff; */
+    }
+
+    .jl_dropdown {
+        width: 190px;
+    }
+
+    /* カテゴリとタグのチェックボックス */
+    .jl_form2 {
+        margin: 0 auto;
+        width : 86.6666%;
+    }
+
+    /* ボタン */
+    .jl_search_button {
+        margin-bottom: 110px;
+    }
+    button {
+        margin-right: 50px;
+    }
+    /* 画像のカテゴリメニュー */
+    .jl_menu {
+        margin-bottom: 16.6666%;
+    }
+
+    /* 検索結果表示エリア*/
+    /* .jl_result {
+        margin-bottom: 350px;
+    } paginationの下へ */
+
+    /* 商品個別エリア */
+    .jl_product {
+        display         : flex;
+        width           : 46.8750%;
+        background-color: #ffffff;
+    }
+
+    .jl_product:nth-child(odd) {
+        float: left;
+    }
+
+    .jl_product:nth-child(even) {
+        flex-direction: row-reverse;
+        float: right;
+    }
+
+    /* .jl_product:nth-child(2) {
+        margin-top: 150px;
+    } */
+
+    .jl_product:last-child {
+        margin-bottom: 0;
+    }
+
+    /* 商品説明 */
+    /* リンク */
+    .jl_product_title a,
+    .jl_product_title a:link,
+    .jl_product_title a:hover,
+    .jl_product_title:active {
+        margin-bottom: 10px;
+        color: #000000;
+}
+
+    .jl_product_title {
+        margin-bottom: 20px;
+        color    : #000000;
+        font-size: 24px;
+    }
+
+    .jl_product_description>div{
+        font-size: 16px;
+    }
+
+    .jl_product_icon img {
+        width : 50px;
+        height: 50px;
+    }
+
+    .jl_product_icon:first-child {
+        margin-right: 10px;
+    }
+
+    .jl_pagination {
+        margin: 100px 0 350px;
+    }
+}

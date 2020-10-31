@@ -1,0 +1,103 @@
+@charset "utf-8";
+.header {
+    display: block;
+    width  : 100%;
+    height : 100px; /* 固定値で入れとく必要あり */
+    border : 0;
+}
+.footer{
+    display: block;
+    width  : 100%;
+    height : 200px;
+}
+.con_pagetitle{
+    width        : 100%;
+    height       : 18.6666667%;
+    position     : relative;
+    margin-bottom: 70px;
+}
+h2{
+    position          : absolute;
+    top               : 50%;
+    left              : 50%;
+    transform         : translate(-50%,50%);
+    -ms-transform     : translate(-50%, -50%);
+    -webkit-transform : translate(-50%, -50%);
+    color             : white;
+    font-size         : 6vw;
+    white-space       : nowrap;
+}
+.con_pagetitle>img{
+    width     : 100%;
+    height    : 100%;
+    max-height: 250px;
+}
+main{
+    /* コンテンツ中心にして、上下のみ70pxの空白を空ける */
+    margin: 70px 10PX;
+    /* 背景色 */
+    background-color: #DAE1ED;
+    border: solid 1px #19448E;
+    padding: 15px;
+}
+h3{
+    font-size: 30px;
+    color: #19448E;
+    margin: 5px 0;
+}
+/* 確認メッセージ */
+p {
+    color: red;
+    font-size: 14px;
+    margin: 21px 0;
+    width: 100%;
+}
+.con_submit_button {
+    text-align: center;
+}
+.c-button{
+    background-color: #fff;
+    border: solid 3px #19448E;
+    border-radius: 20px;
+    /* 送信ボタンの上下の感覚XDと変えてる */
+    margin: 20px 0;
+    width: 136px;
+    height: 30px;
+}
+.tl_sns{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.fab{
+    font-size   : 30px;
+    margin-right: 20px;
+    color       : #c90000;
+}
+/*WEBバージョン*/
+@media screen and (min-width: 560px) {
+    h3 {
+        font-size: 32px;
+        color: #19448E;
+        margin: 5px 0;
+    }
+    main{
+        /* 中心揃え、上下にそれぞれ空白を空ける */
+        margin: 130px auto 0;
+        /* 背景色 */
+        background-color: #DAE1ED;
+        border: solid 1px #19448E;
+        padding: 25px 100px 0;
+        max-width: 960px;
+    }
+    .con_article_button {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .tl_sns{
+        margin: 300px 0 100px;
+    }
+    .fab{
+        font-size   : 50px;
+        margin-right: 30px;
+    }
+}

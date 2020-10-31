@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* header */
+
+/* .sm_header {
+    height: 100px;
+    background-color: #ffffff;
+} */
+
+/* header ?? */
+
+.sm_category {
+    position: relative;
+}
+
+.sm_category h2 {
+    position         : absolute;
+    font-size        : 30px;
+    color            : #ffffff;
+    top              : 35%;
+    left             : 50%;
+    -ms-transform    : translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform        : translate(-50%, -50%);
+    margin           : 0;
+    padding          : 0;
+    width            : 100%;
+    text-align       : center;
+}
+
+.sm_category img {
+    width     : 100%;
+    height    : 70px;
+    object-fit: cover;
+}
+
+/* a */
+
+a {
+    text-decoration: none;
+    color: #898989;
+}
+
+/*container*/
+
+.sm_sitemap_container {
+    max-width: 960px;
+    margin: 0 10px 0 10px;
+    margin: 0 auto;
+    color: #213047;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.sm_sitemap {
+    padding: 10px 15px;
+    margin: 70px 0;
+    width: 100%;
+    /* background-color: #DAE1ED; */
+    /* border: 1px solid #19448E; */
+}
+
+/* .sm_sitemap_box {
+    display: flex;
+} */
+
+.sm_sitemap_title {
+    font-size: 30px;
+    color: #19448E;
+}
+
+.fa-circle {
+    color: #19448E;
+    font-size: 0.5em;
+    padding: 0 0.5em 0 0;
+}
+
+.sm_sitemap_title2 {
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.bs {
+    margin-top: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+/* SNS - 2*/
+
+.sm_sitemap_sns2 {
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 30px;
+    color: #C90000;
+}
+
+/* ?t?b?^?[?? */
+
+/* footer {
+    height: auto;
+    background-color: #19448E;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px 0 20px 0;
+} */
+
+@media (min-width: 560px) {
+    /* ?w?b?_ */
+    /* .sm_header {
+        height: 300px;
+    } */
+    .sm_category img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .sm_category h2 {
+        font-size: 5.5vw;
+        /* font-size: 84px; */
+    }
+    /* container */
+    .sm_sitemap_container {
+        margin: 0 10px 0 10px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #213047;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+    /* SNS - 2*/
+    .sm_sitemap_sns2 {
+        letter-spacing: 0.1em;
+        font-size: 50px;
+        margin-bottom: 100px;
+    }
+}

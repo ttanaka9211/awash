@@ -1,0 +1,874 @@
+# Translation of Plugins - WP-PostRatings - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - WP-PostRatings - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-05-20 14:04:01+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - WP-PostRatings - Stable (latest release)\n"
+
+#: postratings-manager.php:288
+msgid "Hashed IP / Host"
+msgstr "ハッシュ IP /ホスト"
+
+#: postratings-options.php:402
+msgid "Logged-in Users And Guests"
+msgstr "ログインユーザーとゲスト"
+
+#: postratings-options.php:400
+msgid "Users Registered On Blog Only"
+msgstr "登録されているユーザーのみ"
+
+#: postratings-options.php:398
+msgid "Logged-in Users Only"
+msgstr "ログインユーザーのみ"
+
+#: postratings-manager.php:357
+msgid "No Rating Logs Found"
+msgstr "評価ログが見つかりません"
+
+#: wp-postratings.php:636
+msgid "Vote Down"
+msgstr "評価しない"
+
+#: postratings-manager.php:263
+msgid "Rating Logs"
+msgstr "評価ログ"
+
+#: postratings-options.php:24 postratings-templates.php:24
+#: postratings-manager.php:24
+msgid "Access Denied"
+msgstr "アクセスが拒否されました"
+
+#: wp-postratings.php:637
+msgid "Vote Up"
+msgstr "評価する"
+
+#: wp-postratings.php:600
+msgid "Invalid Post ID (#%s)."
+msgstr "無効な投稿ID(#%s)です。"
+
+#: postratings-manager.php:514
+msgid "Rating Stats"
+msgstr "評価統計"
+
+#: postratings-manager.php:328 postratings-manager.php:330
+#: postratings-manager.php:336 postratings-manager.php:338
+msgid "User Rate This %s Star"
+msgid_plural "User Rate This %s Stars"
+msgstr[0] "ユーザーによる評価 %sつ星"
+
+#: includes/postratings-widgets.php:174
+msgid "The minimum number of votes, before the rating displayed."
+msgstr "評価前の最小投票数"
+
+#: wp-postratings.php:874
+msgid "%s user casted his vote."
+msgid_plural "%s users casted their vote."
+msgstr[0] "%sユーザーが投票しました。"
+
+#. translators: 1: Sort by text 2: Sort order text
+#: postratings-manager.php:274
+msgid "Sorted by %1$s in %2$s order."
+msgstr "%1$s順に%2$sで表示しています。"
+
+#. translators: 1: Number of ratings on page 2: Max on page 3: Total rating
+#: postratings-manager.php:266
+msgid "Displaying %1$s to %2$s of %3$s rating log entries."
+msgstr "%3$s 個の評価ログのうち %1$s から %2$s までを表示しています。"
+
+#. Author of the plugin
+msgid "Lester 'GaMerZ' Chan"
+msgstr "Lester 'GaMerZ' Chan"
+
+#: includes/postratings-activation.php:70
+msgid "5 Stars"
+msgstr "5つ星"
+
+#: includes/postratings-activation.php:70
+msgid "3 Stars"
+msgstr "3つ星"
+
+#: includes/postratings-activation.php:70
+msgid "2 Stars"
+msgstr "2つ星"
+
+#: includes/postratings-activation.php:70
+msgid "1 Star"
+msgstr "1つ星"
+
+#: includes/postratings-widgets.php:193
+msgid "** If you are not using any category or time range statistics, you can ignore it."
+msgstr "** カテゴリーや期間統計情報を使っていない場合は無視してかまいません。"
+
+#: includes/postratings-widgets.php:187
+msgid "Time Range:"
+msgstr "期間:"
+
+#: includes/postratings-widgets.php:177
+msgid "Maximum Title Length (Characters):"
+msgstr "最長投稿タイトル (文字数):"
+
+#: includes/postratings-widgets.php:172
+msgid "Minimum Votes:"
+msgstr "最小投票数:"
+
+#: includes/postratings-widgets.php:162
+msgid "%s Only"
+msgstr "%s のみ"
+
+#: includes/postratings-widgets.php:159
+msgid "All"
+msgstr "すべて"
+
+#: includes/postratings-activation.php:70
+msgid "4 Stars"
+msgstr "4つ星"
+
+#: includes/postratings-widgets.php:192
+msgid "* Time range statistics does not support Minimum Votes field, you can ignore that it."
+msgstr "* 期間の統計で最小投票フィールドに対応しない場合は、無視してかまいません。"
+
+#: includes/postratings-widgets.php:184
+msgid "Seperate mutiple categories with commas."
+msgstr "カテゴリーが複数ある場合はカンマで区切ってください。 "
+
+#: includes/postratings-widgets.php:168
+msgid "No. Of Records To Show:"
+msgstr "表示するレコード数:"
+
+#: includes/postratings-widgets.php:157
+msgid "Include Ratings From:"
+msgstr "次の評価を含める:"
+
+#: includes/postratings-widgets.php:153
+msgid "Highest Score By Time Range And Category"
+msgstr "期間とカテゴリーの最高評価"
+
+#: includes/postratings-widgets.php:152
+msgid "Highest Score By Time Range"
+msgstr "期間の最高評価"
+
+#: includes/postratings-widgets.php:151
+msgid "Highest Score By Category"
+msgstr "カテゴリーの最高評価"
+
+#: includes/postratings-widgets.php:150
+msgid "Highest Score"
+msgstr "最高評価"
+
+#: includes/postratings-widgets.php:179
+msgid "<strong>0</strong> to disable."
+msgstr "無効化するには<strong>0</strong>。"
+
+#: includes/postratings-widgets.php:189
+msgid "Use values like <strong>1 day</strong>, <strong>2 weeks</strong>, <strong>1 month</strong>."
+msgstr "<strong>1 day</strong>, <strong>2 weeks</strong>, <strong>1 month</strong>のように入力してください。"
+
+#. Author URI of the plugin
+msgid "https://lesterchan.net"
+msgstr "https://lesterchan.net"
+
+#. Plugin URI of the plugin
+msgid "https://lesterchan.net/portfolio/programming/php/"
+msgstr "https://lesterchan.net/portfolio/programming/php/"
+
+#. Description of the plugin
+msgid "Adds an AJAX rating system for your WordPress site's content."
+msgstr "WordPress の投稿記事に AJAX 形式の評価機能を追加します。"
+
+#: includes/postratings-widgets.php:182
+msgid "Category IDs:"
+msgstr "カテゴリー ID:"
+
+#: postratings-options.php:423 postratings-templates.php:258
+msgid "Save Changes"
+msgstr "変更を保存"
+
+#: postratings-manager.php:204 postratings-manager.php:481
+msgid "Date"
+msgstr "日付"
+
+#: postratings-manager.php:195 postratings-manager.php:482
+msgid "IP"
+msgstr "IP"
+
+#: postratings-manager.php:403
+msgid "Page"
+msgstr "ページ"
+
+#: postratings-manager.php:411
+msgid "Last"
+msgstr "最後"
+
+#: postratings-manager.php:183 postratings-manager.php:284
+#: postratings-manager.php:478
+msgid "Rating"
+msgstr "評価"
+
+#: postratings-manager.php:175 postratings-manager.php:282
+#: postratings-manager.php:476
+msgid "ID"
+msgstr "ID"
+
+#: postratings-options.php:305 postratings-options.php:377
+#: postratings-options.php:386
+msgid "Yes"
+msgstr "はい"
+
+#: postratings-options.php:307 postratings-options.php:376
+#: postratings-options.php:385
+msgid "No"
+msgstr "いいえ"
+
+#: postratings-manager.php:179 postratings-manager.php:283
+#: postratings-manager.php:477
+msgid "Username"
+msgstr "ユーザー名"
+
+#: includes/postratings-stats.php:61 includes/postratings-stats.php:120
+#: includes/postratings-stats.php:173 includes/postratings-stats.php:233
+#: includes/postratings-stats.php:286 includes/postratings-stats.php:346
+#: includes/postratings-stats.php:399 includes/postratings-stats.php:459
+#: includes/postratings-stats.php:512 includes/postratings-stats.php:572
+#: includes/postratings-stats.php:625 includes/postratings-stats.php:670
+#: includes/postratings-stats.php:722 includes/postratings-stats.php:768
+#: includes/postratings-stats.php:821 includes/postratings-stats.php:880
+#: includes/postratings-stats.php:939
+msgid "N/A"
+msgstr "該当なし"
+
+#: postratings-manager.php:568
+msgid "Note:"
+msgstr "注:"
+
+#: postratings-manager.php:210 postratings-manager.php:487
+msgid "Ascending"
+msgstr "昇順"
+
+#: postratings-manager.php:212 postratings-manager.php:488
+msgid "Descending"
+msgstr "降順"
+
+#: includes/postratings-widgets.php:130
+msgid "Title:"
+msgstr "タイトル: "
+
+#: includes/postratings-widgets.php:148
+msgid "Lowest Rated By Time Range"
+msgstr "期間の最低評価"
+
+#: includes/postratings-widgets.php:147
+msgid "Lowest Rated By Category"
+msgstr "カテゴリーの最低評価"
+
+#: includes/postratings-widgets.php:146
+msgid "Lowest Rated"
+msgstr "最低評価"
+
+#: includes/postratings-widgets.php:144
+msgid "Highest Rated By Time Range And Category"
+msgstr "期間とカテゴリーの最高評価"
+
+#: includes/postratings-widgets.php:143
+msgid "Highest Rated By Time Range"
+msgstr "期間の最高評価"
+
+#: includes/postratings-widgets.php:142
+msgid "Highest Rated By Category"
+msgstr "カテゴリーの最高評価"
+
+#: includes/postratings-widgets.php:141
+msgid "Highest Rated"
+msgstr "最高評価"
+
+#: includes/postratings-widgets.php:139
+msgid "Most Rated By Time Range And Category"
+msgstr "期間とカテゴリーによる高評価"
+
+#: includes/postratings-widgets.php:138
+msgid "Most Rated By Time Range"
+msgstr "期間とカテゴリーの最多評価"
+
+#: includes/postratings-widgets.php:137
+msgid "Most Rated By Category"
+msgstr "カテゴリーの最多評価"
+
+#: includes/postratings-widgets.php:136
+msgid "Most Rated"
+msgstr "多くの評価"
+
+#: includes/postratings-widgets.php:134
+msgid "Statistics Type:"
+msgstr "統計タイプ:"
+
+#: includes/postratings-widgets.php:28
+msgid "WP-PostRatings ratings statistics"
+msgstr "WP-PostRatings 評価の統計"
+
+#: wp-postratings.php:1118
+msgid "%s rating"
+msgid_plural "%s ratings"
+msgstr[0] "%s 件の評価"
+
+#: wp-postratings.php:850 wp-postratings.php:852 wp-postratings.php:892
+msgid "%s Highest Rated Page"
+msgid_plural "%s Highest Rated Pages"
+msgstr[0] "もっとも高く評価された固定ページ%s件"
+
+#: wp-postratings.php:845 wp-postratings.php:847 wp-postratings.php:886
+msgid "%s Highest Rated Post"
+msgid_plural "%s Highest Rated Posts"
+msgstr[0] "もっとも高く評価された投稿%s件"
+
+#. Plugin Name of the plugin
+#: wp-postratings.php:832 wp-postratings.php:834 wp-postratings.php:872
+msgid "WP-PostRatings"
+msgstr "WP-PostRatings"
+
+#: wp-postratings.php:643
+msgid "%s Star"
+msgstr "%sつ星"
+
+#: wp-postratings.php:641
+msgid "%s Stars"
+msgstr "%sつ星"
+
+#: wp-postratings.php:604
+msgid "You Had Already Rated This Post. Post ID #%s."
+msgstr "すでに投票しています。 投稿ID #%s。"
+
+#: wp-postratings.php:580
+msgid "Guest"
+msgstr "ゲスト"
+
+#: wp-postratings.php:329 wp-postratings.php:370
+msgid "%s gives a rating of %s"
+msgstr "%sは%sの評価を投票します"
+
+#: wp-postratings.php:102
+msgid "Loading..."
+msgstr "読み込み中..."
+
+#: includes/postratings-admin.php:75 includes/postratings-admin.php:76
+msgid "Ratings Options"
+msgstr "評価オプション"
+
+#: postratings-templates.php:241
+msgid "Most Rated:"
+msgstr "たくさんの評価:"
+
+#: postratings-templates.php:220
+msgid "Highest Rated:"
+msgstr "高い評価:"
+
+#: postratings-templates.php:204
+msgid "Ratings None:"
+msgstr "評価がまだない場合:"
+
+#: postratings-templates.php:189
+msgid "Ratings No Permission Text:"
+msgstr "評価権限がない場合;"
+
+#: postratings-templates.php:174
+msgid "Ratings Voted Text:"
+msgstr "評価済の場合:"
+
+#: postratings-templates.php:168 postratings-templates.php:183
+#: postratings-templates.php:198 postratings-templates.php:214
+#: postratings-templates.php:235 postratings-templates.php:252
+msgid "Restore Default Template (Up/Down Rating)"
+msgstr "デフォルトのテンプレートに戻す(プラスマイナス評価)"
+
+#: postratings-templates.php:166 postratings-templates.php:182
+#: postratings-templates.php:197 postratings-templates.php:213
+#: postratings-templates.php:234 postratings-templates.php:251
+msgid "Restore Default Template (Normal Rating)"
+msgstr "デフォルトのテンプレートに戻す(通常の評価)"
+
+#: postratings-templates.php:158 postratings-templates.php:175
+#: postratings-templates.php:190 postratings-templates.php:205
+#: postratings-templates.php:221 postratings-templates.php:242
+msgid "Allowed Variables:"
+msgstr "利用できるパラメーター:"
+
+#: postratings-templates.php:153 includes/postratings-admin.php:84
+#: includes/postratings-admin.php:85
+msgid "Ratings Templates"
+msgstr "評価テンプレート"
+
+#: postratings-templates.php:150
+msgid "Display the individual rating text. Eg: 1 Star, 2 Stars, etc"
+msgstr "評価のテキスト。 例:1つ星、2つ星など"
+
+#: postratings-templates.php:157
+msgid "Ratings Vote Text:"
+msgstr "評価テキスト"
+
+#: postratings-templates.php:149
+msgid "Display the total score of the ratings"
+msgstr "評価の合計"
+
+#: postratings-templates.php:146
+msgid "Display the ratings percentage"
+msgstr "評価のパーセンテージ"
+
+#: postratings-templates.php:145
+msgid "Display the max number of ratings"
+msgstr "評価の最大値"
+
+#: postratings-templates.php:142
+msgid "Display the total number of users rated for the post"
+msgstr "評価したユーザー数"
+
+#: postratings-templates.php:141
+msgid "Display the average ratings"
+msgstr "評価の平均値"
+
+#: postratings-templates.php:138
+msgid "Display the ratings voting image"
+msgstr "投票の画像"
+
+#: postratings-templates.php:137
+msgid "Display the ratings images"
+msgstr "評価の画像"
+
+#: postratings-templates.php:134
+msgid "Template Variables"
+msgstr "テンプレートに使えるパラメーター"
+
+#: postratings-templates.php:131
+msgid "Post Ratings Templates"
+msgstr "投稿の評価テンプレート"
+
+#: postratings-templates.php:65
+msgid "No Ratings Templates Updated"
+msgstr "評価がないテンプレート更新"
+
+#: postratings-options.php:413
+msgid "Do Not Log"
+msgstr "ログを保存しない"
+
+#: postratings-options.php:417
+msgid "Logged By Username"
+msgstr "ユーザー名で保存"
+
+#: postratings-options.php:414
+msgid "Logged By Cookie"
+msgstr "Cookieで保存"
+
+#: postratings-options.php:410
+msgid "Ratings Logging Method:"
+msgstr "評価ログの保存方法:"
+
+#: postratings-options.php:397
+msgid "Guests Only"
+msgstr "ゲストのみ"
+
+#: postratings-options.php:394
+msgid "Who Is Allowed To Rate?"
+msgstr "誰が評価できるか？"
+
+#: postratings-options.php:391
+msgid "Allow To Rate"
+msgstr "評価できる権限"
+
+#: postratings-options.php:382
+msgid "Show Fading In And Fading Out Of Ratings"
+msgstr "評価をフェードイン・フェードアウト表示する"
+
+#: postratings-options.php:373
+msgid "Show Loading Image With Text"
+msgstr "読み込み中画像とテキストを表示する"
+
+#: postratings-options.php:321 wp-postratings.php:654
+msgid "Rating Value"
+msgstr "評価の値"
+
+#: postratings-options.php:320 wp-postratings.php:653
+msgid "Rating Text"
+msgstr "評価のテキスト"
+
+#: postratings-options.php:319 wp-postratings.php:652
+msgid "Rating Image"
+msgstr "評価の画像"
+
+#: postratings-options.php:314
+msgid "Individual Rating Text/Value"
+msgstr "各評価のテキストと値"
+
+#: postratings-options.php:311
+msgid "Update 'Individual Rating Text/Value' Display"
+msgstr "「各評価のテキストと値」を更新する"
+
+#: postratings-options.php:299
+msgid "Max Ratings:"
+msgstr "最高評価の値:"
+
+#: postratings-options.php:229
+msgid "Ratings Image:"
+msgstr "評価の画像:"
+
+#: postratings-options.php:216
+msgid "Post Ratings Options"
+msgstr "投稿の評価オプション"
+
+#: postratings-options.php:158 postratings-options.php:161
+#: postratings-options.php:164 postratings-options.php:170
+#: postratings-templates.php:103 postratings-templates.php:106
+#: postratings-templates.php:109 postratings-templates.php:115
+#: includes/postratings-activation.php:61
+#: includes/postratings-activation.php:62
+#: includes/postratings-activation.php:71
+#: includes/postratings-activation.php:77 wp-postratings.php:1121
+msgid "out of"
+msgstr "/"
+
+#: postratings-options.php:158 postratings-options.php:161
+#: postratings-options.php:164 postratings-templates.php:103
+#: postratings-templates.php:106 postratings-templates.php:109
+#: includes/postratings-activation.php:61
+#: includes/postratings-activation.php:62
+#: includes/postratings-activation.php:77 wp-postratings.php:1121
+msgid "average"
+msgstr "平均"
+
+#: postratings-options.php:139 postratings-options.php:167
+#: postratings-templates.php:84 postratings-templates.php:112
+#: includes/postratings-activation.php:63
+msgid "No Ratings Yet"
+msgstr "まだ評価がありません"
+
+#: postratings-options.php:136 postratings-options.php:164
+#: postratings-templates.php:81 postratings-templates.php:109
+#: includes/postratings-activation.php:77
+msgid "You need to be a registered member to rate this."
+msgstr "この投稿を評価するには、ユーザー登録が必要です。"
+
+#: postratings-options.php:133 postratings-options.php:136
+#: postratings-options.php:161 postratings-templates.php:78
+#: postratings-templates.php:81 postratings-templates.php:106
+#: includes/postratings-activation.php:62
+msgid "rated"
+msgstr "評価済"
+
+#: postratings-options.php:130 postratings-options.php:133
+#: postratings-options.php:136 postratings-options.php:142
+#: postratings-options.php:145 postratings-options.php:158
+#: postratings-options.php:161 postratings-options.php:164
+#: postratings-options.php:173 postratings-templates.php:75
+#: postratings-templates.php:78 postratings-templates.php:81
+#: postratings-templates.php:87 postratings-templates.php:90
+#: postratings-templates.php:103 postratings-templates.php:106
+#: postratings-templates.php:109 postratings-templates.php:118
+#: includes/postratings-activation.php:61
+#: includes/postratings-activation.php:62
+#: includes/postratings-activation.php:77
+#: includes/postratings-activation.php:79
+msgid "votes"
+msgstr "投票"
+
+#: postratings-options.php:130 postratings-options.php:133
+#: postratings-options.php:136 postratings-options.php:142
+#: postratings-options.php:158 postratings-options.php:161
+#: postratings-options.php:164 postratings-templates.php:75
+#: postratings-templates.php:78 postratings-templates.php:81
+#: postratings-templates.php:87 postratings-templates.php:103
+#: postratings-templates.php:106 postratings-templates.php:109
+#: includes/postratings-activation.php:61
+#: includes/postratings-activation.php:62
+#: includes/postratings-activation.php:77 wp-postratings.php:1118
+#: wp-postratings.php:1121
+msgid ","
+msgstr ","
+
+#: postratings-options.php:130 postratings-options.php:133
+#: postratings-options.php:136 postratings-options.php:142
+#: postratings-templates.php:75 postratings-templates.php:78
+#: postratings-templates.php:81 postratings-templates.php:87
+msgid "rating"
+msgstr "評価"
+
+#: postratings-options.php:109
+msgid "No Ratings Option Updated"
+msgstr "評価なしのオプションを更新しました"
+
+#: postratings-options.php:104 postratings-templates.php:60
+msgid "Updated"
+msgstr "更新しました"
+
+#: postratings-options.php:99 postratings-options.php:226
+msgid "Ratings Settings"
+msgstr "評価の設定"
+
+#: postratings-options.php:98
+msgid "Allow To Vote Option"
+msgstr "投票オプションを許可する"
+
+#: postratings-options.php:97 postratings-options.php:407
+msgid "Logging Method"
+msgstr "ログ方式"
+
+#: postratings-options.php:95
+msgid "Individual Rating Value"
+msgstr "各評価値"
+
+#: postratings-options.php:94
+msgid "Individual Rating Text"
+msgstr "各評価のテキスト"
+
+#: postratings-options.php:93
+msgid "Max Ratings"
+msgstr "最大評価"
+
+#: postratings-options.php:92
+msgid "Ratings Image"
+msgstr "評価の画像"
+
+#: postratings-options.php:91 postratings-templates.php:55
+msgid "Ratings Template For Most Rated"
+msgstr "もっとも評価が多いテンプレート"
+
+#: postratings-options.php:90 postratings-templates.php:54
+msgid "Ratings Template For Highest Rated"
+msgstr "もっとも評価が高いテンプレート"
+
+#: postratings-options.php:89 postratings-templates.php:53
+msgid "Ratings Template For No Ratings"
+msgstr "評価がない場合のテンプレート"
+
+#: postratings-options.php:88 postratings-templates.php:52
+msgid "Ratings Template No Permission"
+msgstr "権限がない場合のテンプレート"
+
+#: postratings-options.php:87 postratings-templates.php:51
+msgid "Ratings Template Voted"
+msgstr "投票済のテンプレート"
+
+#: postratings-options.php:86 postratings-templates.php:50
+msgid "Ratings Template Vote"
+msgstr "投票のテンプレート"
+
+#: postratings-options.php:85
+msgid "Custom Rating"
+msgstr "カスタム評価"
+
+#: postratings-manager.php:572
+msgid "'Logs And Data' means both the logs generated and the rating data for the post."
+msgstr "「ログとデータ」とは、保存されたログと投稿の評価データの両方を意味します。"
+
+#: postratings-manager.php:571
+msgid "'Data Only' means the rating data for the post."
+msgstr "「データのみ」は、投稿の評価データを意味します。"
+
+#: postratings-manager.php:570
+msgid "'Logs Only' means the logs generated when a user rates a post."
+msgstr "「ログのみ」は、ユーザーが投稿を評価したときに保存されるログを意味します。"
+
+#: postratings-manager.php:562
+msgid "Delete Data/Logs"
+msgstr "評価データ/ログを削除"
+
+#: postratings-manager.php:555
+msgid "Seperate each Post ID with a comma."
+msgstr "複数の投稿 ID はカンマで区切ってください。"
+
+#: postratings-manager.php:557
+msgid "To delete ratings data/logs for all posts. Just type in: all"
+msgstr "すべての投稿の評価データ/ログを削除するには、「all」 のように入力してください。"
+
+#: postratings-manager.php:547
+msgid "Logs And Data"
+msgstr "ログとデータ"
+
+#: postratings-manager.php:546
+msgid "Data Only"
+msgstr "データのみ"
+
+#: postratings-manager.php:545
+msgid "Logs Only"
+msgstr "ログのみ"
+
+#: postratings-manager.php:542
+msgid "Delete Type: "
+msgstr "削除対象:"
+
+#: postratings-manager.php:535
+msgid "Delete Ratings Data/Logs"
+msgstr "評価データ/ログを削除"
+
+#: postratings-manager.php:526
+msgid "Total Average:"
+msgstr "平均値:"
+
+#: postratings-manager.php:522
+msgid "Total Score:"
+msgstr "総評価:"
+
+#: postratings-manager.php:518
+msgid "Total Users Voted:"
+msgstr "投票したユーザー数:"
+
+#: postratings-manager.php:505
+msgid "Go"
+msgstr "適用する"
+
+#: postratings-manager.php:495 postratings-manager.php:497
+msgid "Per Page"
+msgstr "1ページあたり"
+
+#: postratings-manager.php:473
+msgid "Sort Options:"
+msgstr "並び替えオプション:"
+
+#: postratings-manager.php:460
+msgid "Rating: "
+msgstr "評価:"
+
+#: postratings-manager.php:441
+msgid "Comment Author: "
+msgstr "コメント投稿者: "
+
+#: postratings-manager.php:439
+msgid "Registered User: "
+msgstr "登録ユーザー: "
+
+#: postratings-manager.php:433
+msgid " Guest"
+msgstr "ゲスト"
+
+#: postratings-manager.php:428
+msgid "Post ID:"
+msgstr "投稿 ID:"
+
+#: postratings-manager.php:411
+msgid "Go to Last Page"
+msgstr "最後のページを見る"
+
+#: postratings-manager.php:396 postratings-manager.php:408
+msgid "Go to Page"
+msgstr "ページを見る"
+
+#: postratings-manager.php:393
+msgid "First"
+msgstr "先頭"
+
+#: postratings-manager.php:393
+msgid "Go to First Page"
+msgstr "先頭のページを見る"
+
+#: postratings-manager.php:381
+msgid "Next Page"
+msgstr "次のページ"
+
+#: postratings-manager.php:372
+msgid "Previous Page"
+msgstr "前のページ"
+
+#: postratings-manager.php:328 postratings-manager.php:330
+#: postratings-manager.php:336 postratings-manager.php:338
+msgid " Out Of "
+msgstr "から"
+
+#: postratings-manager.php:306
+msgid "%s @ %s"
+msgstr "%s @ %s"
+
+#: postratings-manager.php:287
+msgid "Date / Time"
+msgstr "日付 / 時間"
+
+#: includes/postratings-admin.php:66 includes/postratings-admin.php:67
+#: postratings-manager.php:262
+msgid "Manage Ratings"
+msgstr "評価の管理"
+
+#: postratings-manager.php:199 postratings-manager.php:483
+msgid "Host"
+msgstr "ホスト"
+
+#: postratings-manager.php:191 postratings-manager.php:286
+#: postratings-manager.php:480
+msgid "Post Title"
+msgstr "投稿タイトル"
+
+#: postratings-manager.php:108 postratings-manager.php:141
+msgid "Rating Data \"%s\" For Post ID(s) %s Has Been Deleted."
+msgstr "投稿ID %s の評価データ \"%s\" は削除されました。"
+
+#: postratings-manager.php:100 postratings-manager.php:126
+msgid "Rating Data \"%s\" Has Been Deleted."
+msgstr "評価データ \"%s\" は削除されました。"
+
+#: postratings-manager.php:90 postratings-manager.php:134
+msgid "An Error Has Occured While Deleting All Rating Logs For Post ID(s) %s."
+msgstr "投稿ID %sのすべての評価ログを削除中にエラーが発生しました。"
+
+#: postratings-manager.php:88 postratings-manager.php:132
+msgid "All Rating Logs For Post ID(s) %s Have Been Deleted."
+msgstr "投稿ID %sのすべての評価ログを削除しました。"
+
+#: postratings-manager.php:82 postratings-manager.php:120
+msgid "An Error Has Occured While Deleting All Rating Logs."
+msgstr "すべての評価ログを削除中にエラーが発生しました。"
+
+#: postratings-manager.php:80 postratings-manager.php:118
+msgid "All Rating Logs Have Been Deleted."
+msgstr "すべての評価ログが削除されました"
+
+#: wp-postratings.php:1118 wp-postratings.php:1121
+msgid "%s vote"
+msgid_plural "%s votes"
+msgstr[0] "%s 票"
+
+#: wp-postratings.php:535
+msgid "Failed To Verify Referrer"
+msgstr "リファラーを確認できません"
+
+#: includes/postratings-shortcodes.php:31
+msgid "Note: There is a rating embedded within this post, please visit this post to rate it."
+msgstr "注: この投稿には評価機能がついています。投票するには、この投稿にアクセスしてください。"
+
+#: wp-postratings.php:487
+msgid "There is no excerpt because this is a protected post."
+msgstr "保護された投稿のため抜粋が表示されません。"
+
+#: includes/postratings-scripts.php:54
+msgid "Please rate only 1 item at a time."
+msgstr "1項目につき１度だけ投票できます。"
+
+#: postratings-options.php:303
+msgid "Enable Google Rich Snippets?"
+msgstr "Googleリッチスニペットを有効化するか？"
+
+#: postratings-manager.php:426
+msgid "Filter Options:"
+msgstr "フィルターオプション:"
+
+#: postratings-options.php:415
+msgid "Logged By IP"
+msgstr "IP によるログ"
+
+#: postratings-options.php:416
+msgid "Logged By Cookie And IP"
+msgstr "Cookie と IP によるログ"
+
+#: postratings-options.php:96 postratings-options.php:370
+msgid "Ratings AJAX Style"
+msgstr "評価の AJAX スタイル"
+
+#: postratings-manager.php:573
+msgid "If your logging method is by IP and Cookie or by Cookie, users may still be unable to rate if they have voted before as the cookie is still stored in their computer."
+msgstr "Cookie はコンピューターに保存されるため、ログ方式が IP と Cookie、または Cookie の場合は、ユーザーが以前に投票したことがある場合に評価できないことがあります。"
+
+#: postratings-manager.php:556
+msgid "To delete ratings data/logs from Post ID 2, 3 and 4. Just type in: 2,3,4"
+msgstr "投稿 ID 2、3、4の評価データ/ログを削除するには、「2,3,4」のように入力してください。"
+
+#: postratings-manager.php:552
+msgid "Post ID(s):"
+msgstr "投稿 ID: "

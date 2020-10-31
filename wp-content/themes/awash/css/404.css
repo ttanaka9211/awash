@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+
+/* =======▼コンテンツ======= */
+.n_section{
+    margin-bottom: 30px;
+}
+
+/* =======ウサギ画像======= */
+.n_body_usagi{
+    display: flex;
+    justify-content: center;
+}
+.n_body_usagi img{
+    max-width: 200px;
+    width: 40%;
+    height: auto;
+}

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/*====================▼共通====================*/
+p{
+    font-size: 16px;
+}
+/*====================▲共通====================*/
+
+/*====================▼ページタイトル====================*/
+.con_page-title-typo {
+    width        : 100%;
+    position     : relative;
+    margin-bottom: 70px;
+}
+h2 {
+    position         : absolute;
+    bottom           : 50%;
+    right            : 50%;
+    transform        : translate(50%, 50%);
+    -ms-transform    : translate(50%, 50%);
+    -webkit-transform: translate(50%, 50%);
+    color            : white;
+    font-size        : 6vw;
+}
+.con_page-title-typo>img {
+    width     : 100%;
+    height    : 100%;
+    max-height: 250px;
+}
+/*====================▲ページタイトル====================*/
+
+/*====================▼お問い合わせ====================*/
+.con_article {
+    margin          : 70px 10px;
+    background-color: #DAE1ED;
+    border          : solid 1px #19448E;
+    padding         : 15px;
+}
+.con_article_typo {
+    font-size: 30px;
+    color    : #19448E;
+    margin   : 5px 0;
+}
+.noto {
+    padding-bottom: 10px;
+}
+.noto p {
+    margin: 21px 0;
+}
+label {
+    display: block;
+}
+input[type="text"], input[type="mail"] {
+    background-color: #fff;
+    border          : solid 1px #707070;
+    width           : 100%;
+    max-width       : 240px;
+}
+textarea {
+    resize          : both;
+    width           : 100%;
+    max-width       : 100%;
+    background-color: #fff;
+    border          : solid 1px #707070;
+}
+input[type="submit"] {
+    background-color: #fff;
+    border          : solid 3px #19448E;
+    border-radius   : 20px;
+    margin          : 20px 0;
+    width           : 136px;
+    height          : 30px;
+}
+/*====================▲お問い合わせ====================*/
+
+@media screen and (min-width: 560px) {
+    /*====================▼共通====================*/
+
+    /*====================▲共通====================*/
+
+    /*====================▼ページタイトル====================*/
+    h2{
+        font-size: 5.5vw;
+    }
+    /*====================▲ページタイトル====================*/
+
+    /*====================▼お問い合わせ====================*/
+    .con_article {
+        margin   : 130px auto 350px;
+        padding  : 25px 100px 0;
+        max-width: 960px;
+    }
+    .con_article_typo {
+        font-size: 32px;
+    }
+    input[type="text"], input[type="mail"] {
+        max-width       : 50%;
+    }
+    textarea {
+        width       : 100%;
+    }
+    /*====================▲お問い合わせ====================*/
+}

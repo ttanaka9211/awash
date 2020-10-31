@@ -1,0 +1,239 @@
+@charset "utf-8";
+/*====================▼共通====================*/
+a {
+    text-decoration: none;
+    color          : #000000;
+}
+a:visited {
+    color: #BCBCBC;
+}
+a:hover {
+    opacity: 0.7;
+}
+p{
+    font-size: 16px;
+}
+.container2 {
+    width  : 100%;
+    padding: 0 10px;
+    margin: auto;
+}
+/*====================▲共通====================*/
+
+/*====================▼ページタイトル====================*/
+.t_category {
+    width        : 100%;
+    position     : relative;
+    margin-bottom: 70px;
+}
+.t_category h2 {
+    position         : absolute;
+    bottom           : 50%;
+    right            : 50%;
+    transform        : translate(50%, 50%);
+    -ms-transform    : translate(50%, 50%);
+    -webkit-transform: translate(50%, 50%);
+    color            : white;
+    font-size        : 6vw;
+}
+.t_category_img01 {
+    width     : 100%;
+    height    : 100%;
+    max-height: 250px;
+}
+/*====================▲ページタイトル====================*/
+
+/*====================▼SNS共有====================*/
+.addtoany_shortcode {
+    text-align  : right;
+    margin-right: 10px;
+}
+/* .a2a_svg>svg{←効かない
+    font-size: 30px;
+    color: #19448e;
+} */
+/*====================▲SNS共有====================*/
+/* .t_event {
+        max-width: 50%;
+        margin:0 auto;
+
+    } */
+
+/*====================▼記事====================*/
+.t_event_title {
+    font-size: 22px;
+    margin   : 0 20px;
+}
+.t_event_date {
+    margin-right: 10px;
+    text-align  : right;
+}
+/* 1枚目の画像以外を中央揃えにするコードが必要 */
+/* .t_event_bun {←文章にクラス名を指定する必要あり
+    margin: 0 25px 30px;
+    text-align: justify;
+} */
+
+.wp-block-image img{
+        height: auto;
+}
+
+.t_tag {
+    margin-left: 25px;
+}
+.t_tag>div {
+    width        : 70px;
+    height       : 20px;
+    display      : inline-block;
+    margin-right : 10px;
+    border       : 1px solid #19448E;
+    border-radius: 10px;
+    text-align   : center;
+    margin-bottom: 30px;
+}
+.t_tag>div>p>a {
+    color    : #000000;
+    font-size: 10px;
+}
+.t_tag>div>p>a:vidited {
+    color: #000000;
+}
+.t_pagenation {
+    display        : flex;
+    margin-left    : 25px;
+    margin-bottom  : 30px;
+    justify-content: space-between;
+    color          : #19448E;
+}
+.t_page_right {
+    text-align  : right;
+    margin-right: 25px;
+}
+/*====================▲記事====================*/
+
+/*====================▼コメント====================*/
+.tl_comment{
+    padding: 0 10px;
+    content: "";
+    display: block;
+    clear  : both;
+}
+label {
+    display: block;
+}
+input[type="text"]{
+    background-color: white;
+    border          : solid 1px #19448E;
+    width           : 100%;
+    max-width       : 240px;
+}
+textarea {
+    resize          : both;
+    width           : 100%;
+    max-width       : 100%;
+    background-color: #fff;
+    border          : solid 1px #19448E;
+}
+input[type="submit"] {
+    background-color: rgba(25, 68, 142,0.2);
+    color           : #19448E;
+    border-radius   : 20px;
+    margin          : 20px 0;
+    width           : 80px;
+    height          : 30px;
+    float           : right;
+}
+/*====================▲コメント====================*/
+
+/*====================▼関連記事(表示されてない問題を解決してから修正)====================*/
+.t_kanren {
+    padding: 0 25px;
+}
+.t_kanren h3 {
+    font-size: 16px;
+}
+.t_kanrenbox {
+    border-top   : 1px solid #707070;
+    width        : 100%;
+    margin-bottom: 70px;
+    padding-top  : 10px;
+    justify-content: center;
+}
+.t_kanren_img {
+    margin-bottom: 30px;
+}
+.t_kanren_kijititle {
+    font-size: 22px;
+    color    : #19448E;
+}
+
+
+/* ====================▲関連記事====================*/
+
+@media (min-width: 560px) {
+    /*====================▼共通====================*/
+    .container2 {
+        max-width: 960px;
+    }
+    /*====================▲共通====================*/
+
+    /*====================▼ページタイトル====================*/
+    .t_category_img01 {
+        margin-bottom: 100px;
+    }
+    .t_category h2 {
+        font-size: 5.5vw;
+    }
+    /*====================▲ページタイトル====================*/
+    /* .t_event {
+        max-width: 50%;
+        margin:0 auto; */
+
+
+
+    /*====================▼SNS共有====================*/
+    /* .j_sns {←効かない
+        font-size: 50px;
+    } */
+    /*====================▲SNS共有====================*/
+
+    /*====================▼記事====================*/
+    .t_event_title {
+        font-size: 48px;
+    }
+    .t_shiinkai {
+        padding      : 20px;
+        margin-bottom: 20px;
+    }
+    .t_shiinkai h4 {
+        margin-top: 1em;
+    }
+    .t_shiinkai_icon {
+        font-size: 50px;
+    }
+    .t_tag>div {
+        width        : 100px;
+        height       : 30px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    .t_pagenation {
+        margin-bottom: 100px;
+    }
+    /*====================▲記事====================*/
+
+    /*====================▼コメント====================*/
+
+    /*====================▲コメント====================*/
+
+    /*====================▼関連記事====================*/
+    .t_kanrenbox {
+        display: inline-flex;
+        justify-content: space-between;
+
+    }
+    .t_kanren_kiji{
+        width: 47.916%;
+    }
+    /*====================▲関連記事====================*/
+}

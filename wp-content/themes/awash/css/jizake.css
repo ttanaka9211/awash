@@ -1,0 +1,330 @@
+@charset "utf-8";
+/*====================▼共通====================*/
+a , a:visited{
+    text-decoration: none;
+    color          : black;
+}
+a:hover{
+    opacity: 0.7;
+}
+
+p{
+    font-size: 16px ;
+}
+/*====================▲共通====================*/
+
+/*====================▼ページタイトル====================*/
+.j_category {
+    width        : 100%;
+    position     : relative;
+    margin-bottom: 70px;
+}
+.j_category h2 {
+    position         : absolute;
+    bottom           : 50%;
+    right            : 50%;
+    transform        : translate(50%, 50%);
+    -ms-transform    : translate(50%, 50%);
+    -webkit-transform: translate(50%, 50%);
+    color            : white;
+    font-size        : 6vw;
+}
+.j_category_img01{
+    width     : 100%;
+    height    : 100%;
+    max-height: 250px;
+}
+/*====================▲ページタイトル====================*/
+
+/*====================▼いいね====================*/
+.post-ratings{
+    margin: 5px 0 0 20px;
+}
+/*====================▲いいね====================*/
+
+/*====================▼SNS共有====================*/
+.addtoany_shortcode {
+    text-align  : right;
+    margin-right: 10px;
+}
+/* .a2a_svg>svg{←効かない
+    font-size: 30px;
+    color: #19448e;
+} */
+/*====================▲SNS共有====================*/
+
+/*====================▼記事====================*/
+.ji_container {
+    margin     : 0 10px;
+}
+.j_sake{
+    margin:24px 0 10px 0;
+    display: flex;
+    align-items: baseline;
+}
+.j_title {
+    font-size: 22px;
+    margin   : 0 20px;
+}
+/* .wp-block-image>img{←PHPのクラス名設定が必要
+    width: 100%;
+    margin-bottom: 30px;
+} */
+.j_img1{
+    text-align: center;
+}
+
+.j_img1_1{
+    margin-bottom:2%;
+    width: 100%;
+    height: auto;
+}
+
+.j_bun {
+    margin    : 0 25px 30px;
+    text-align: justify;
+}
+.j_uzu{
+    width   : 100%;
+    position: relative;
+}
+.j_uzu_uzu{
+    width : 100%;
+    height: auto;
+
+}
+.j_jizake_img01{
+    width   : 70%;
+    height  : auto;
+    position: absolute;
+    left    : 10px;
+    bottom  : 50px;
+}
+.j_hyouki{
+    width   : 40%;
+    position: absolute;
+    right   : 0;
+    bottom  : 50px;
+}
+.j_hyouki>img{
+    width : 40%;
+    height: auto;
+}
+.j_sakeshoukai_all{
+    margin          : 0 10px;
+    padding-left    : 20px;
+    background-color: rgba(25,68,142,0.16);
+    text-align      : left;
+    border-radius   : 6px;
+}
+.j_sakeshoukai_icon{
+    width : 20px;
+    height: 20px;
+}
+.j_rubi{
+    margin-left: 20px;
+    font-size  : 9px;
+}
+.j_tag {
+    margin: 10px 0 30px 20px;
+}
+.j_tag>div{
+    width        : 70px;
+    height       : 20px;
+    display      : inline-block;
+    margin-right : 10px;
+    border       : 1px solid #19448E;
+    border-radius: 10px;
+    text-align   : center;
+}
+.j_tag>div>p>a:vidited {
+    color: #000000;
+}
+/*====================▲記事====================*/
+
+/*====================▼コメント====================*/
+#comment-area{
+    padding: 0 10px;
+    content: "";
+    display: block;
+    clear  : both;
+}
+label {
+    display: block;
+}
+input[type="text"]{
+    background-color: white;
+    border          : solid 1px #19448E;
+    width           : 100%;
+    max-width       : 240px;
+}
+textarea {
+    resize          : both;
+    width           : 100%;
+    max-width       : 100%;
+    background-color: #fff;
+    border          : solid 1px #19448E;
+}
+input[type="submit"] {
+    background-color: rgba(25, 68, 142,0.2);
+    color           : #19448E;
+    border-radius   : 20px;
+    margin          : 20px 0;
+    width           : 80px;
+    height          : 30px;
+    float           : right;
+}
+/*====================▲コメント====================*/
+
+/*====================▼関連商品====================*/
+.j_osusume{
+    margin: 60px 0 70px;
+}
+.j_osusume>h4{
+    margin       : 0 10px 26px 10px;
+    border-bottom: 1px solid #19448E;
+    text-align   : left;
+}
+.j_osusumephoto{
+    width  : 100%;
+    display: flex;
+}
+.j_osusumephoto>a{
+    box-sizing: border-box;
+    width     : 33.333%;
+    text-align: center;
+}
+.j_osusumephoto>a>img{
+    width : 100%;
+    height: auto;
+}
+/*====================▲関連商品====================*/
+
+@media (min-width: 560px) {
+    /*====================▼共通====================*/
+    /*PHPの修正をしてmainタグにmax-width960を設定する*/
+    /*====================▲共通====================*/
+
+    /*====================▼ページタイトル====================*/
+    .j_category h2 {
+        font-size: 5.5vw;
+    }
+    /*====================▲ページタイトル====================*/
+
+    /*====================▼いいね====================*/
+    .post-ratings{
+        display: inline-block;
+        font-size: 30px;
+    }
+    .post-ratings>img{
+        height: 30px;
+        width: auto;
+    }
+    /*====================▲いいね====================*/
+
+    /*====================▼SNS共有====================*/
+    /* .j_sns {←効かない
+        font-size: 50px;
+    } */
+    /*====================▲SNS共有====================*/
+
+    /*====================▼記事====================*/
+    .ji_container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .j_sake{
+        margin    :24px 0 30px 0;
+        text-align: left;
+    }
+    .j_title {
+        display  : inline-block;
+        font-size: 48px;
+        margin   : 0 0 30px 25px;
+    }
+    .j_bun {
+        margin    : 0 25px 120px 25px;
+        text-align: justify;
+        font-size : 18px;
+    }
+    .j_img1_1{
+        width: 80%;
+    }
+    .j_uzu{
+        text-align: center;
+        display   : inline-block;
+        position: relative;
+    }
+    .j_uzu_uzu{
+        width: 65%;
+    }
+
+    .j_jizake_img01{
+        width   : 70%;
+        position: absolute;
+        left    : 3%;
+        bottom  : 10%;
+    }
+    .j_hyouki{
+        width   : 35%;
+        position: absolute;
+        right   : 10%;
+        bottom  : 20%;
+    }
+    .j_hyouki>img{
+        width: 40%;
+    }
+    .j_wrapper{
+        max-width : 960px;
+        text-align: center;
+        margin    : 0 18px;
+    }
+    .j_sakeshoukai_all{
+        font-size       : 18px;
+        background-color: rgba(25,68,142,0.16);
+        text-align      : left;
+        border-radius   : 6px;
+        padding         : 35px 0 35px 80px;
+    }
+    .j_sakeshoukai p{
+        font-size: 18px;
+    }
+    .j_rubi{
+        margin-left: 20px;
+        font-size  : 16px;
+    }
+    .j_shiinkai_icon {
+        font-size: 50px;
+    }
+    .j_shiinkai h4 {
+        margin-top: 1em;
+    }
+    .j_tag{
+        text-align: left;
+    }
+    .j_tag>div {
+        width        : 100px;
+        height       : 30px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    /*====================▲記事====================*/
+
+    /*====================▼コメント====================*/
+
+    /*====================▲コメント====================*/
+
+    /*====================▼関連商品====================*/
+    .j_osusume>h4{
+        margin: 60px 10px 26px 10px;
+    }
+    /*====================▲関連商品====================*/
+}
+
+
+@media (max-width: 560px){.j_sake {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}}

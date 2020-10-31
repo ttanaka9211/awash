@@ -1,0 +1,263 @@
+@charset "utf-8";
+/*=====================↓共通===================*/
+a {
+    text-decoration: none;
+    color          : black;
+}
+a:visited {
+    color: #bcbcbc;
+}
+a:hover {
+    opacity: 0.7;
+}
+p{
+    font-size: 16px;
+}
+/*=====================↑共通===================*/
+
+/*=====================↓ページタイトル===================*/
+.al_h2 {
+    width        : 100%;
+    height       : 18.6666667%;
+    position     : relative;
+    margin-bottom: 70px;
+}
+h2 {
+    position         : absolute;
+    bottom           : 50%;
+    right            : 50%;
+    transform        : translate(50%, 50%);
+    -ms-transform    : translate(50%, 50%);
+    -webkit-transform: translate(50%, 50%);
+    color            : white;
+    font-size        : 6vw;
+}
+.al_h2>img {
+    width     : 100%;
+    height    : 100%;
+    max-height: 250px;
+}
+/*=====================↑ページタイトル===================*/
+
+/*=====================↓記事リスト===================*/
+article {
+    padding: 0 10px 40px;
+    width  : 100%;
+}
+article>a {
+    text-align: left;
+}
+.attachment-post-thumbnail {
+    width        : 100%;
+    height       : auto;
+    margin-bottom: 20px;
+}
+.al_article_title {
+    font-size: 22px;
+    color    : #19448E;
+}
+.al_article_tag {
+    width        : 70px;
+    height       : 20px;
+    display      : inline-block;
+    margin-right : 10px;
+    border       : 1px solid #19448E;
+    border-radius: 10px;
+    position     : relative;
+}
+.al_article_tag>p{
+    position         : absolute;
+    bottom           : 50%;
+    right            : 50%;
+    transform        : translate(50%, 50%);
+    -ms-transform    : translate(50%, 50%);
+    -webkit-transform: translate(50%, 50%);
+    white-space      : nowrap;
+}
+.al_article_tag>p>a{
+    font-size: 10px;
+}
+.al_article_tag>p>a:visited{
+    color: #000000;
+}
+/*=====================↑記事リスト===================*/
+
+/*=====================↓ページネーション===================*/
+.al_pager .al_pagenation li {
+    display: none;
+}
+.al_pager .al_pagenation {
+    text-align: center;
+}
+.al_pager .al_pagenation li {
+    display      : inline;
+    margin       : 0 2px;
+    padding      : 0;
+    display      : inline-block;
+    text-align   : center;
+    border-radius: 50px;
+}
+.al_pager .al_pagenation li.pre, .al_pager .al_pagenation li.next {
+    background-color: #19448E;
+    color           : #fff;
+}
+.al_pager .al_pagenation li a {
+    vertical-align    : middle;
+    position          : absolute;
+    top               : 0;
+    left              : 0;
+    width             : 100%;
+    height            : 100%;
+    text-align        : center;
+    display           : table;
+    text-decoration   : none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+.al_pager .al_pagenation li.pre a, .al_pager .al_pagenation li.next a {
+    color: #fff;
+}
+.al_pager .al_pagenation li a span {
+    display       : table-cell;
+    vertical-align: middle;
+}
+.al_pager .al_pagenation li a:hover, .al_pager .al_pagenation li a.active {
+    color                   : #000;
+    background              : #fff;
+    border                  : 1px solid #19448E;
+    border-radius           : 10px;
+    border-radius           : 50px;
+    animation               : animScale 0.4s ease-out;
+    transform-origin        : 50% 50%;
+    -webkit-animation       : animScale 0.4s ease-out;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation          : animScale 0.4s ease-out;
+    -moz-transform-origin   : 50% 50%;
+}
+/* ページネーションぷにぷに */
+@keyframes animScale {
+    0% {
+        transform: scale(0.8, 0.8);
+    }
+    40% {
+        transform: scale(1.2, 1.2);
+    }
+    60% {
+        transform: scale(1, 1);
+    }
+    80% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+@-webkit-keyframes animScale {
+    0% {
+        -webkit-transform: scale(0.8, 0.8);
+    }
+    40% {
+        -webkit-transform: scale(1.2, 1.2);
+    }
+    60% {
+        -webkit-transform: scale(1, 1);
+    }
+    80% {
+        -webkit-transform: scale(1.1, 1.1);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+}
+@-moz-keyframes animScale {
+    0% {
+        -moz-transform: scale(0.8, 0.8);
+    }
+    40% {
+        -moz-transform: scale(1.2, 1.2);
+    }
+    60% {
+        -moz-transform: scale(1, 1);
+    }
+    80% {
+        -moz-transform: scale(1.1, 1.1);
+    }
+    100% {
+        -moz-transform: scale(1, 1);
+    }
+}
+.al_pager .al_pagenation li {
+    display: none;
+}
+/* SP楕円サイズ 前へと次へ*/
+.page-numbers>span,
+.al_pager .al_pagenation li.pre, .al_pager .al_pagenation li.next {
+    display   : inline-block;
+    width     : 30%;
+    height    : 35px;
+    text-align: center;
+    font-size : 12px;
+}
+.al_pager .al_pagenation li.pre a, .al_pager .al_pagenation li.next a {
+    width     : 100%;
+    text-align: center;
+}
+.al_pager .al_pagenation li.pre span::after {
+    content: "　PREV";
+}
+.al_pager .al_pagenation li.next span::before {
+    content: "NEXT　";
+}
+/*=====================↑ページネーション===================*/
+
+@media screen and (min-width:560px) {
+    /*=====================↓共通===================*/
+    main {
+        display  : flex;
+        flex-wrap: wrap;
+        max-width: 960px;
+        margin   : 0 auto;
+    }
+    /*=====================↑共通===================*/
+
+    /*=====================↓ページタイトル===================*/
+    .al_h2 {
+        height       : 13.0208333%;
+        margin-bottom: 100px;
+    }
+    h2 {
+        font-size: 5.5vw;
+    }
+    /*=====================↑ページタイトル===================*/
+
+    /*=====================↓記事リスト===================*/
+    article {
+        box-sizing    : border-box;
+        width         : 50%;
+        padding-bottom: 50px;
+    }
+    .al_article_title {
+        font-size: 32px;
+    }
+    .al_article_tag {
+        width        : 100px;
+        height       : 30px;
+        border-radius: 15px;
+    }
+    .al_article_tag>p>a {
+        font-size: 16px;
+    }
+    /*=====================↑記事リスト===================*/
+
+    /*=====================↓ページネーション===================*/
+    .al_pager .al_pagenation li {
+        position: relative;
+    }
+    .al_pager .al_pagenation li.pre, .al_pager .al_pagenation li.next {
+        width : 50px;
+        height: 50px;
+    }
+    /*=====================↑ページネーション===================*/
+}

@@ -1,0 +1,687 @@
+@charset "utf-8";
+/*====================↓共通====================*/
+.container {
+	background-color: white;
+    color           : black;
+}
+.main{
+    transition: 0.5s;
+    padding   : 0 10px;
+    overflow: hidden;
+}
+.main.active{
+    margin-top: 450px;
+    transition: 0.5s;
+}
+li ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color          : black;
+}
+a:visited {
+    color: #BCBCBC;
+}
+a:hover{
+    opacity: 0.7;
+}
+p{
+    text-align: justify;
+    font-size : 12px;
+}
+.i_body_bigfont{
+    font-size: 42px;
+}
+.css_fade{
+    opacity   : 0;
+    transition: all .9s ease;
+}
+.css_fade.show {
+    opacity  : 1;
+    transform: none;
+}
+.fade_up {
+    transform: translate(0, 200px);
+}
+.fade_down {
+    transform: translate(0, -200px);
+}
+.fade_lr{
+    transform: translate(-200px, 0);
+}
+.fade_rl{
+    transform: translate(200px, 0);
+}
+/*====================↑共通====================*/
+
+/*====================↓ファーストビュー====================*/
+.i_body_topphoto {
+    position: relative;
+}
+.i_body_logo{
+    position                 : absolute;
+    top                      : 50%;
+    left                     : 50%;
+    transform                : translate(-50%, -50%);
+    width                    : 40%;
+    height                   : 40%;
+    filter                   : drop-shadow(3px 3px 5px #000);
+    animation-name           : toplogoAnime;
+    animation-duration       : 1000s;
+    animation-delay          : 4s;
+    animation-iteration-count: infinite;
+}
+.i_animation {
+    max-width                  : 100%;
+    height                     : 100vh;
+    position                   : relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility        : hidden;
+}
+.i_animation .i_body_topphoto {
+    position                   : absolute;
+    top                        : 0;
+    left                       : 0;
+    bottom                     : 0;
+    right                      : 0;
+    opacity                    : 0;
+    animation                  : topAnime 30s infinite;
+    -webkit-backface-visibility: hidden;
+    backface-visibility        : hidden;
+}
+.i_animation .img1 {
+    background-image: url(../images/contents/index/i_top_img3.jpg);  /* 背景の画像を指定 */
+    background-size : cover;
+}
+.i_animation .img2 {
+    background-image: url(../images/contents/index/i_top_img2.jpg);   /* 背景の画像を指定 */
+    background-size : cover;
+    animation-delay : 5s;
+}
+.i_animation .img3 {
+    background-image: url(../images/contents/index/i_top_img1.jpg);   /* 背景の画像を指定 */
+    background-size : cover;
+    animation-delay : 10s;
+}
+.i_animation .img4 {
+    background-image: url(../images/contents/index/i_top_img4.jpg);   /* 背景の画像を指定 */
+    background-size : cover;
+    animation-delay : 15s;
+}
+.i_animation .img5 {
+    background-image: url(../images/contents/index/i_top_img5.jpg);   /* 背景の画像を指定 */
+    background-size : cover;
+    animation-delay : 20s;
+}
+.i_animation .img6 {
+    background-image           : url(../images/contents/index/i_top_img6.jpg);   /* 背景の画像を指定 */
+    background-size            : cover;
+    animation-delay            : 25s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility        : hidden;
+    transform                  : translate3d(0, 0, 0);
+}
+@keyframes topAnime {
+    0%   { opacity: 0;   }
+    5%   { opacity: 1;   }
+    25%  { opacity: 1;   }
+    30%  { opacity: 0.5; }
+    50%  { opacity: 0;   }
+    100% { opacity: 0;   }
+}
+@keyframes toplogoAnime {
+    0%    { opacity: 0;   }
+    0.05% { opacity: 0.2; }
+    0.07% { opacity: 0.4; }
+    0.10% { opacity: 0.5; }
+    0.12% { opacity: 0.8; }
+    0.15% { opacity: 1;   }
+    100%  { opacity: 1;   }
+}
+.i_animation .i_body_logo{
+    position        : absolute;
+    display         : inline-block;
+    width           : 40%;
+    height          : 40%;
+    background-image: url(../images/template/awash_logo_white.svg);
+    background-size : 100% 100%;
+    top             : 50%;
+    left            : 50%;
+    transform       : translate(-50%,-50%);
+}
+/*====================↑ファーストビュー====================*/
+
+/*====================↓グローバルナビゲーション====================*/
+.i_gnav_pc{
+    display: none;
+}
+/*====================↑グローバルナビゲーション====================*/
+
+/*====================↓イベント情報====================*/
+.i_event{
+    width : 100%;
+    margin: 0 auto;
+}
+.i_kumo{
+    display: none;
+}
+.i_event_content{
+    width: 100%;
+}
+.i_event_title{
+    position: relative;
+    padding : 0 10%;
+}
+.i_event_title>img{
+    width : 100%;
+    height: auto;
+}
+.i_event_title>p{
+    font-size  : 9vw;
+    position   : absolute;
+    bottom     : 50%;
+    right      : 50%;
+    transform  : translate(50%,50%);
+    white-space: nowrap;
+}
+.i_event_text>a{
+    display      : flex;
+    margin-bottom: 10px;
+}
+.i_event_text>a>img{
+    width : 18px;
+    height: auto;
+}
+.i_event_more{
+    text-align: right;
+    margin    : 10px 0;
+}
+.i_event_more_border{
+    border          : solid 1px #19448E;
+    background-color: #19448E;
+    display         : inline-block;
+    width           : 80px;
+    height          : 25px;
+    border-radius   : 12.5px;
+    text-align      : center;
+}
+.i_event_more_border>p{
+    display  : inline;
+    color    : #fff;
+    margin   : 0 auto;
+    font-size: 12px;
+}
+/*====================↑イベント情報====================*/
+
+/*====================↓今のオススメと特集====================*/
+.i_body_osusumetotokusyu{
+    padding: 0 10%;
+}
+.i_body_osusume,.i_body_tokushu{
+    margin: 10px 0 30px 0;
+    width : 100%;
+    height: auto;
+}
+.i_body_osusume>a>h2>img,.i_body_tokushu>a>h2>img{
+    width: 100%;
+}
+/*====================↑今のオススメと特集====================*/
+
+/*====================↓阿波ッシュとは====================*/
+#i_body_awash{
+    margin-bottom: 56px;
+}
+h3{
+    font-size: 30px;
+}
+.i_body_overview{
+    width : 100%;
+    margin: 0 auto;
+}
+.i_body_overviewtitle>h3{
+    font-size     : 24px;
+    letter-spacing: 15px;
+    color         : #C90000;
+    text-align    : center;
+    font-style    : oblique;
+}
+.i_body_overviewtitle>div{
+    font-size    : 16px;
+    text-align   : center;
+    margin-bottom: 30px;
+}
+.i_body_overviewcomment{
+    text-align: center;
+}
+.i_body_overviewcomment_j,
+.i_body_overviewcomment_e{
+    display: none;
+}
+.i_body_overviewcomment_j_sp>p{
+    text-align   : center;
+    font-size    : 12px;
+    margin-bottom: 18px;
+}
+.i_border {
+    width           : 100%;
+    height          : 1px;
+    margin          : 0 auto;
+    background-color: brown;
+}
+.i_body_overviewcomment_e_sp>p{
+    text-align: center;
+    font-size : 6px;
+    color     : #959595;
+    margin-top: 18px;
+}
+/*====================↑阿波ッシュとは====================*/
+
+/*====================↓徳島の地酒====================*/
+.i_jizake{
+    margin-top: 50px;
+    position  : relative;
+}
+.i_body_jizakephoto_m{
+    width : 50%;
+    height: auto;
+}
+.i_body_jizakephoto{
+    width : 100%;
+    height: auto;
+}
+.i_body_jizakecomment>h3{
+    font-size : 32px;
+    text-align: center;
+}
+.i_body_usagi{
+    display: flex;
+}
+.i_body_usagi>img{
+    width : 50%;
+    height: auto;
+}
+.i_body_sakeicon{
+    width   : 25%;
+    height  : auto;
+    position: absolute;
+    top     : 3%;
+    left    : 5%;
+}
+/*====================↑徳島の地酒====================*/
+
+/*====================↓徳島の酒造====================*/
+.i_kura{
+    margin-top: 50px;
+    position  : relative;
+}
+.i_body_kuraphoto_m{
+    width : 50%;
+    height: auto;
+}
+.i_body_kuraphoto{
+    width : 100%;
+    height: auto;
+}
+.i_body_kuracomment>h3{
+    font-size : 32px;
+    text-align: center;
+}
+.i_body_taru{
+    display: flex;
+}
+.i_body_taru>img{
+    width  : 50%;
+    height : auto;
+    display: block;
+    margin : 0 auto;
+}
+.i_body_kuraicon{
+    width   : 25%;
+    height  : auto;
+    position: absolute;
+    top     : 3%;
+    left    : 5%;
+}
+/*====================↑徳島の酒造====================*/
+
+/*====================↓お酒を知る====================*/
+    .i_body_osakewoshiru{
+        position: relative;
+    }
+    .i_body_osakewoshirutitle{
+        display : flex;
+        position: absolute;
+        top     : 0;
+        left    : 0;
+        z-index : 1;
+    }
+    .i_body_osakewoshirutitle>p:first-of-type{
+        writing-mode: vertical-rl;
+        font-size   : 5vw;
+    }
+    .i_body_osakewoshirutitle>p:last-of-type{
+        margin: auto 0;
+    }
+    .i_body_osakewoshiruphoto{
+        width : 100%;
+        height: auto;
+    }
+/*====================↑お酒を知る====================*/
+
+/*====================↓写真スライド====================*/
+.i_photoslide{
+    display: none;
+}
+/*====================↑写真スライド====================*/
+
+    @media screen and (min-width:560px) {
+    /*====================↓共通====================*/
+    header{
+        display: none;
+    }
+    p{
+        font-size: 16px;
+    }
+    main{
+        max-width: 960px;
+        margin   : 0 auto;
+    }
+    .i_body_menu{
+        display: none;
+    }
+    .i_body_photoslide{
+        display: none;
+    }
+    .i_body_overviewcomment_e_sp,.i_body_overviewcomment_j_sp{
+        display: none;
+    }
+    .i_body_bigfont{
+        font-size: 48px;
+    }
+    /*====================↑共通====================*/
+
+    /*====================↓グローバルナビゲーション====================*/
+    .i_gnav_pc{
+        display         : block;
+        width           : 100%;
+        background-color: #fff;
+        padding         : 70px auto 100px;
+        margin          : 0 auto;
+    }
+    .i_gnav_all{
+        max-width       : 960px;
+        background-color: #fff;
+        display         : flex;
+        flex-direction  : row-reverse;
+        justify-content : space-around;
+        margin          : 0 auto;
+    }
+    .i_gnav_a{
+        width             : 5vw;
+        -moz-transition   : -moz-transform 0.5s linear;
+        -webkit-transition: -webkit-transform 0.5s linear;
+        -o-transition     : -o-transform 0.5s linear;
+        -ms-transition    : -ms-transform 0.5s linear;
+        transition        : transform 0.5s linear;
+    }
+    .i_gnav_a:hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform   : scale(1.2);
+        -o-transform     : scale(1.2);
+        -ms-transform    : scale(1.2);
+        transform        : scale(1.2);
+    }
+    .i_gnav_a:visited{
+        color: black;
+    }
+    .i_gnav_a.fix{
+        height    : 110px;
+        transition: 1s;
+    }
+    .i_gnav_a>img{
+        width        : 100%;
+        height       : auto;
+        margin-bottom: 30px;
+    }
+    .i_gnav_a>p{
+        writing-mode: vertical-rl;
+        font-size   : 2vw;
+        margin      : 0 auto;
+        white-space : nowrap;
+        opacity     : 1;
+        transition  : 0.5s;
+    }
+    .i_gnav_a>p.none{
+        opacity   : 0;
+        transition: 0.5s;
+    }
+    .i_body_menu{
+        writing-mode : vertical-rl;
+        margin-bottom: 100px;
+        color        : #707070;
+    }
+    .i_body_menu ul li {
+        list-style-type: none;
+        margin         : 0 90px 90px 90px;
+    }
+    .i_body_menu  {
+        -ms-writing-mode: tb-rl;
+        writing-mode    : vertical-rl;
+        display         : inline-block;
+        position        : relative;
+        top             : 50px;
+        left            : 50%;
+        bottom          : 100px;
+        transform       : translateX(-50%);
+        font-size       : 24px;
+    }
+    .i_body_menu>ul>li>a>img{
+        width : 65px;
+        height: auto;
+    }
+    .i_body_menu>ul>li>.i_body_menuup{
+        margin-top: 40px;
+    }
+    .i_body_menu>ul>li {
+        -moz-transition   : -moz-transform 0.5s linear;
+        -webkit-transition: -webkit-transform 0.5s linear;
+        -o-transition     : -o-transform 0.5s linear;
+        -ms-transition    : -ms-transform 0.5s linear;
+        transition        : transform 0.5s linear;
+    }
+    .i_body_menu>ul>li :hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform   : scale(1.2);
+        -o-transform     : scale(1.2);
+        -ms-transform    : scale(1.2);
+        transform        : scale(1.2);
+    }
+    /*====================↑グローバルナビゲーション====================*/
+
+    /*====================↓イベント情報====================*/
+    .i_event{
+        display: flex;
+    }
+    .i_kumo{
+        display: block;
+        width  : 25%;
+        margin : auto 0;
+    }
+    .i_kumo:first-of-type{
+        padding-right: 50px;
+    }
+    .i_kumo:last-of-type{
+        padding-left: 50px;
+    }
+    .i_kumo>img{
+        width : 100%;
+        height: auto;
+    }
+    .i_kumo_white1,
+    .i_kumo_black2{
+        padding-right: 50px;
+    }
+    .i_kumo_black1,
+    .i_kumo_white2{
+        padding-left: 50px;
+    }
+    .i_event_content{
+        width: 50%;
+    }
+    .i_event_title>p{
+        font-size  : 4vw;
+    }
+    .i_event_text{
+        padding-left: 25px;
+    }
+    .i_event_more_border>p{
+        font-size: 16px;
+    }
+    /*====================↑イベント情報====================*/
+
+    /*====================↓今のオススメと特集====================*/
+    .i_body_osusumetotokusyu {
+        margin : 0 auto;
+        display: flex;
+    }
+    .i_body_osusume,.i_body_tokushu{
+        margin: 50px 0 30px 0;
+        width : 50%;
+    }
+    /*====================↑今のオススメと特集====================*/
+
+    /*====================↓阿波ッシュとは====================*/
+    .i_body_overviewcomment_j_sp,
+    .i_body_overviewcomment_e_sp{
+        display: none;
+    }
+    .i_body_overviewcomment_j,
+    .i_body_overviewcomment_e{
+        display: block;
+    }
+    .i_body_overview{
+        width: 80% ;
+    }
+    .i_body_overviewtitle>h3{
+        font-size: 48px;
+    }
+    .i_body_overviewtitle>div{
+        font-size: 24px;
+    }
+    .i_body_overviewcomment{
+        display: flex;
+    }
+    .i_body_overviewcomment_j{
+        width       : 50%;
+        border-right: 1px solid brown;
+        margin-right: 15px;
+    }
+    .i_body_overviewcomment_j>p{
+        text-align  : right;
+        font-size   : 14px;
+        margin-right: 14px;
+    }
+    .i_border {
+        display: none;
+    }
+    .i_body_overviewcomment_e{
+        width      : 50%;
+        text-align : left;
+        margin-left: 5px;
+    }
+    .i_body_overviewcomment_e>p{
+        text-align: left;
+        font-size : 12px;
+        color     : #959595;
+    }
+    /*====================↑阿波ッシュとは====================*/
+
+    /*====================↓徳島の地酒====================*/
+    .i_body_jizake{
+        display: flex;
+    }
+    .i_body_jizakephoto_m{
+        margin: auto 0;
+    }
+    .i_body_jizakecomment{
+        width       : 50%;
+        padding-left: 8%;
+    }
+    .i_body_jizakecomment>h3{
+        white-space: nowrap;
+    }
+    .i_body_sakeicon{
+        width    : 15%;
+        top      : 50%;
+        left     : 50%;
+        transform: translate(-50%,-50%);
+    }
+    /*====================↑徳島の地酒====================*/
+
+    /*====================↓徳島の酒造====================*/
+    .i_body_kura{
+        display       : flex;
+        flex-direction: row-reverse;
+    }
+    .i_body_kuraphoto_m{
+        margin: auto 0;
+    }
+    .i_body_kuracomment{
+        width        : 50%;
+        padding-right: 8%;
+    }
+    .i_body_kuracomment>h3{
+        white-space: nowrap;
+    }
+    .i_body_kuraicon{
+        width    : 15%;
+        top      : 50%;
+        left     : 50%;
+        transform: translate(-50%,-50%);
+    }
+    /*====================↑徳島の酒造====================*/
+
+    /*====================↓お酒を知る====================*/
+    .i_body_osakewoshirutitle{
+        top : 10%;
+        left: 15%;
+    }
+    .i_body_osakewoshirutitle>p:first-of-type{
+        font-size: 30px;
+    }
+    .i_body_osakewoshirutitle>p:last-of-type{
+        font-size: 30px;
+    }
+    .i_body_osakewoshiruphoto{
+        padding-right: 15%;
+    }
+    /*====================↑お酒を知る====================*/
+
+    /*====================↓写真スライド====================*/
+    .i_body_photoslide_up{
+        display: flex;
+    }
+    .i_body_photoslide>div>p{
+        width : 200px;
+        height: 230px;
+    }
+    .i_body_photoslide_up>p:nth-child(odd) {
+        background-color: darkgoldenrod;
+    }
+    .i_body_photoslide_down{
+        display: flex;
+    }
+    .i_body_photoslide_down>p:nth-child(even) {
+        background-color: brown;
+    }
+    .i_body_photoslide{
+        margin-bottom: 260px;
+    }
+    /*====================↑写真スライド====================*/
+}
+@media screen and (max-width:850px) {
+    .i_kumo>img{
+        display: none;
+    }
+}
